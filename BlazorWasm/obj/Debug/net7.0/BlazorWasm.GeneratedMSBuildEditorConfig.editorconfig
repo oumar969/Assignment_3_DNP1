@@ -40,6 +40,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ggyo7swwbw
+
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/LoginButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5CdXR0b25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-lhd5b4yoyf
+
 [C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2ar46ifnr2

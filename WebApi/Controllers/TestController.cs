@@ -9,24 +9,26 @@ namespace WebApi.Controllers;
 [Authorize]
 public class TestController : ControllerBase
 {
+    [HttpGet("allowanon"), AllowAnonymous]
+    public ActionResult GetAsAnon()
+    {
+        return Ok("This was accepted as anonymous");
+    }
+
     // role
     [HttpGet("authorized")]
     public ActionResult GetAsAuthorized()
     {
         return Ok("This was accepted as authorized");
     }
-    
-    [HttpGet("allowanon"), AllowAnonymous]
-    public ActionResult GetAsAnon()
-    {
-        return Ok("This was accepted as anonymous");
-    }
+
     // policy MustBeVia
     [HttpGet("mustbevia"), Authorize("MustBeVia")]
     public ActionResult GetAsVia()
     {
         return Ok("This was accepted as via domain");
     }
+
     // manual checking
     [HttpGet("manualcheck")]
     public ActionResult GetWithManualCheck()

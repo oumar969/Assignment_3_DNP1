@@ -4,11 +4,19 @@ using Microsoft.IdentityModel.Tokens;
 using Shared.Auth;
 using WebApi.Services;
 
-
 var builder = WebApplication.CreateBuilder(args);
-AuthorizationPolicies.AddPolicies(builder.Services);
 
-//Add authentication with info about JWT
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+// added auth handling
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
     options.RequireHttpsMetadata = false;
@@ -22,13 +30,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IAuthService, AuthService>();
+
+
+// adding policies
+AuthorizationPolicies.AddPolicies(builder.Services);
+
 
 var app = builder.Build();
 
@@ -39,18 +46,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseHttpsRedirection();
+app.UseAuthentication(); // now using authentication middleware
+
 app.UseCors(x => x
     .AllowAnyMethod()
     .AllowAnyHeader()
     .SetIsOriginAllowed(origin => true) // allow any origin
     .AllowCredentials());
 
-
-app.UseHttpsRedirection();
-
+//---
 app.UseAuthorization();
-
-app.UseAuthentication();
 
 app.MapControllers();
 
