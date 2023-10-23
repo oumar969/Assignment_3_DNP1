@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/MustBeLoggedInToView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXVzdEJlTG9nZ2VkSW5Ub1ZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/ShowCredentialsFromContext.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvd0NyZWRlbnRpYWxzRnJvbUNvbnRleHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
