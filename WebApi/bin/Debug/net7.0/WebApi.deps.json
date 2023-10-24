@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "WebApi/1.0.0": {
         "dependencies": {
+          "Application": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.12",
           "Microsoft.AspNetCore.OpenApi": "7.0.2",
           "Shared": "1.0.0",
@@ -199,6 +200,14 @@
         }
       },
       "System.Security.Cryptography.Cng/4.5.0": {},
+      "Application/1.0.0": {
+        "dependencies": {
+          "Shared": "1.0.0"
+        },
+        "runtime": {
+          "Application.dll": {}
+        }
+      },
       "Shared/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "7.0.12"
@@ -368,6 +377,11 @@
       "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "path": "system.security.cryptography.cng/4.5.0",
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Shared/1.0.0": {
       "type": "project",

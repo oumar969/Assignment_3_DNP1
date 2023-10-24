@@ -1,0 +1,11 @@
+.icon[b-lhd5b4yoyf] {
+    width: 30px;
+    height: 30px; /* Tilføjer en højde for at sikre, at ikonet forbliver kvadratisk */
+    cursor: pointer;
+    margin: 5px; /* Tilføjer lidt mellemrum omkring ikonet */
+    transition: transform 0.2s; /* Tilføjer en glidende overgangseffekt */
+}
+
+.icon:hover[b-lhd5b4yoyf] {
+    transform: scale(1.2); /* Forstør ikonet lidt ved hover */
+}

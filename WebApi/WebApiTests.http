@@ -1,11 +1,13 @@
 // log in as Troels
-POST https://localhost:7130/auth/login
+#POST https://localhost:7130/auth/login
+POST http://localhost:5161/auth/login
 Content-Type: application/json
 
 { "Username" : "trmo", "Password" : "onetwo3FOUR" }
 
 ### // log in as Jakob
-POST https://localhost:7130/auth/login
+#POST https://localhost:7130/auth/login
+POST http://localhost:5161/auth/login
 Content-Type: application/json
 
 { "Username" : "jknr", "Password" : "password" }

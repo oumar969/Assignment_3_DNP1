@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.LogicInterface;
+using Microsoft.AspNetCore.Mvc;
+using Shared.Auth;
+using Shared.Dtos;
 
 namespace WebApi.Controllers;
 
@@ -20,12 +23,12 @@ public class PostController: ControllerBase
         try
         {
             Post created = await todoLogic.CreateAsync(dto);
-            return Created($"/posts/{created.Id}", created);
+            return Created($"/posts/{created.PostId}", created);
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
             return StatusCode(500, e.Message);
         }
-    }}
+    }
 }

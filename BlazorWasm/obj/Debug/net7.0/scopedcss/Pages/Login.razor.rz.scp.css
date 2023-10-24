@@ -1,0 +1,32 @@
+.card[b-ggyo7swwbw] {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff; /* Baggrundsfarve til kortet */
+    border-radius: 30px; /* Afrundede kanter */
+    border: 1px solid #ddd; /* Kortkant */
+}
+
+.field[b-ggyo7swwbw] {
+    margin-top: 20px;
+    border-radius:30px;
+}
+
+.loginbtn[b-ggyo7swwbw] {
+    background-color: #462696;
+    border: none;
+    border-radius:30px;
+    padding: 10px 20px;
+    color: #fff; /* Tekstfarve */
+    cursor: pointer; /* Ændrer markøren ved hover */
+}
+
+.loginbtn:hover[b-ggyo7swwbw] {
+    transform: scale(1.1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    background-color: #4c51af; /* Ændrer baggrundsfarve ved hover */
+}
