@@ -26,13 +26,16 @@ public class FileContext
         }
     }
     
-    private void LoadData()
+    public void LoadData()
     {
-        if (dataContainer != null) return;
+        if (dataContainer != null) 
+        {
+            return;
+        }
     
         if (!File.Exists(filePath))
         {
-            dataContainer = new ()
+            dataContainer = new DataContainer()
             {
                 Posts = new List<Post>(),
                 Users = new List<User>()
@@ -42,10 +45,13 @@ public class FileContext
         string content = File.ReadAllText(filePath);
         dataContainer = JsonSerializer.Deserialize<DataContainer>(content);
     }
-    
+
     public void SaveChanges()
     {
-        string serialized = JsonSerializer.Serialize(dataContainer);
+        string serialized = JsonSerializer.Serialize(dataContainer, new JsonSerializerOptions
+        {
+            WriteIndented = true
+        });
         File.WriteAllText(filePath, serialized);
         dataContainer = null;
     }

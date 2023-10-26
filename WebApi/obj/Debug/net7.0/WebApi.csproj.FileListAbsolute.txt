@@ -46,3 +46,6 @@ C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\WebApi\obj\Debug\net7.0\WebApi.g
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\WebApi\obj\Debug\net7.0\ref\WebApi.dll
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\WebApi\bin\Debug\net7.0\Application.dll
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\WebApi\bin\Debug\net7.0\Application.pdb
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\WebApi\bin\Debug\net7.0\FileData.dll
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\WebApi\bin\Debug\net7.0\FileData.pdb
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\WebApi\bin\Debug\net7.0\data.json

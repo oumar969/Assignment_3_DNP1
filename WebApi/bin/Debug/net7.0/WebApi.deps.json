@@ -9,6 +9,7 @@
       "WebApi/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "FileData": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.12",
           "Microsoft.AspNetCore.OpenApi": "7.0.2",
           "Shared": "1.0.0",
@@ -208,6 +209,14 @@
           "Application.dll": {}
         }
       },
+      "FileData/1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0"
+        },
+        "runtime": {
+          "FileData.dll": {}
+        }
+      },
       "Shared/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "7.0.12"
@@ -379,6 +388,11 @@
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
     },
     "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileData/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

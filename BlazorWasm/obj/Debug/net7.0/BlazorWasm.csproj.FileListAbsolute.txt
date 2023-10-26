@@ -840,3 +840,16 @@ C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\refi
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\BlazorWasm.pdb
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\ref\BlazorWasm.dll
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\scopedcss\Pages\LoginButtons.razor.rz.scp.css
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\bin\Debug\net7.0\wwwroot\_framework\HttpClients.dll
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\bin\Debug\net7.0\wwwroot\_framework\HttpClients.pdb
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\bin\Debug\net7.0\wwwroot\_framework\HttpClients.pdb.gz
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\bin\Debug\net7.0\wwwroot\_framework\HttpClients.dll.gz
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\bin\Debug\net7.0\HttpClients.dll
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\bin\Debug\net7.0\HttpClients.pdb
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\build-gz\Ouf5qBIf.gz
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\build-gz\OhQ4YQqv.gz
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\scopedcss\Pages\ViewPosts.razor.rz.scp.css
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\scopedcss\Pages\CreatePost.razor.rz.scp.css
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\scopedcss\Pages\CreateUser.razor.rz.scp.css
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\scopedcss\Pages\MyPosts.razor.rz.scp.css
+C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\obj\Debug\net7.0\scopedcss\Pages\ViewUsers.razor.rz.scp.css

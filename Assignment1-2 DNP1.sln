@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileData", "FileData\FileData.csproj", "{9713784A-3655-4F60-8CD6-150395CD19CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClients", "HttpClients\HttpClients.csproj", "{2FF60C74-5126-4531-B325-C9394ED12F3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{9713784A-3655-4F60-8CD6-150395CD19CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9713784A-3655-4F60-8CD6-150395CD19CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9713784A-3655-4F60-8CD6-150395CD19CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FF60C74-5126-4531-B325-C9394ED12F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF60C74-5126-4531-B325-C9394ED12F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF60C74-5126-4531-B325-C9394ED12F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF60C74-5126-4531-B325-C9394ED12F3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

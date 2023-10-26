@@ -77,6 +77,18 @@
       "PackagePath": "staticwebassets\\image\\Logout.png"
     },
     {
+      "Id": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\wwwroot\\image\\clear_funnel.png",
+      "PackagePath": "staticwebassets\\image\\clear_funnel.png"
+    },
+    {
+      "Id": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\wwwroot\\image\\edit.gif",
+      "PackagePath": "staticwebassets\\image\\edit.gif"
+    },
+    {
+      "Id": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\wwwroot\\image\\funnel.png",
+      "PackagePath": "staticwebassets\\image\\funnel.png"
+    },
+    {
       "Id": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

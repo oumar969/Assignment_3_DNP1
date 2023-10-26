@@ -20,8 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/EditPost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFBvc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/FetchData.razor]
@@ -48,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/CreatePost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-uzy05ijp57
+
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/CreateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-8ioxdxedwk
+
 [C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ggyo7swwbw
@@ -55,6 +63,18 @@ build_metadata.AdditionalFiles.CssScope = b-ggyo7swwbw
 [C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/LoginButtons.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5CdXR0b25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-lhd5b4yoyf
+
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/MyPosts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlQb3N0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-vfu6vvyj55
+
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/ViewPosts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-agzgme1hb0
+
+[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/ViewUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VzZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-os2xeex0iu
 
 [C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

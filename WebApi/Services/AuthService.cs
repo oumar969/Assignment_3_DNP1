@@ -1,39 +1,24 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using FileData;
 using Shared.Auth;
 
 namespace WebApi.Services;
 
 public class AuthService : IAuthService
 {
-    private readonly IList<User> users = new List<User>
+    private FileContext file = new FileContext();
+    private readonly IList<User> Users = new List<User>();
+
+    public AuthService()
     {
-        new User
-        {
-            Age = 36,
-            Email = "trmo@via.dk",
-            Domain = "via",
-            Name = "Troels Mortensen",
-            Password = "onetwo3FOUR",
-            Role = "Teacher",
-            Username = "trmo",
-            SecurityLevel = 4
-        },
-        new User
-        {
-            Age = 34,
-            Email = "jakob@gmail.com",
-            Domain = "gmail",
-            Name = "Jakob Rasmussen",
-            Password = "password",
-            Role = "Student",
-            Username = "jknr",
-            SecurityLevel = 2
-        }
-    };
+        file.LoadData();
+    }
 
     public Task<User> ValidateUser(string username, string password)
     {
-        User? existingUser = users.FirstOrDefault(u => 
+        file.LoadData();
+        Console.WriteLine(username+password);
+        User? existingUser = file.Users.FirstOrDefault(u => 
             u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
         
         if (existingUser == null)
@@ -66,7 +51,8 @@ public class AuthService : IAuthService
         
         // save to persistence instead of list
         
-        users.Add(user);
+        file.Users.Add(user);
+        file.SaveChanges();
         
         return Task.CompletedTask;
     }

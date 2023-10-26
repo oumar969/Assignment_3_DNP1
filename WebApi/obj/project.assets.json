@@ -363,6 +363,19 @@
           "bin/placeholder/Application.dll": {}
         }
       },
+      "FileData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FileData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileData.dll": {}
+        }
+      },
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1178,6 +1191,11 @@
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
     },
+    "FileData/1.0.0": {
+      "type": "project",
+      "path": "../FileData/FileData.csproj",
+      "msbuildProject": "../FileData/FileData.csproj"
+    },
     "Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/Shared.csproj",
@@ -1187,6 +1205,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Application >= 1.0.0",
+      "FileData >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.12",
       "Microsoft.AspNetCore.OpenApi >= 7.0.2",
       "Shared >= 1.0.0",
@@ -1224,6 +1243,9 @@
           "projectReferences": {
             "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Application\\Application.csproj": {
               "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Application\\Application.csproj"
+            },
+            "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\FileData\\FileData.csproj": {
+              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\FileData\\FileData.csproj"
             },
             "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj": {
               "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj"

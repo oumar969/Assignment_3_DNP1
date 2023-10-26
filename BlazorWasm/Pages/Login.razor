@@ -1,10 +1,10 @@
 ﻿@page "/Login"
-@using BlazorWasm.Services
-@using BlazorWasm.Services.Http
+@using HttpClients.ClientInterfaces
 @using Microsoft.AspNetCore.Components
 @inject IAuthService authService
 @inject NavigationManager navMgr
-<h3>Login</h3>
+
+
 <AuthorizeView>
     <NotAuthorized>
         <div class="card">
@@ -36,6 +36,7 @@
         </div>
     </Authorized>
 </AuthorizeView>
+
 
 @code {
     private string userName;

@@ -1,4 +1,9 @@
 using System.Text;
+using Application.DaoInterfaces;
+using Application.Logic;
+using Application.LogicInterface;
+using FileData;
+using FileData.DAO_s;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Shared.Auth;
@@ -13,8 +18,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<FileContext>();
+builder.Services.AddScoped<IUserDao, UserFileDao>();
+builder.Services.AddScoped<IUserLogic, UserLogic>();
 
-builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IPostDao, PostFileDao>();
+builder.Services.AddScoped<IPostLogic, PostLogic>();
+AuthorizationPolicies.AddPolicies(builder.Services);
+
 
 // added auth handling
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
@@ -46,8 +57,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseAuthentication(); // now using authentication middleware
 
 app.UseCors(x => x
     .AllowAnyMethod()
@@ -55,7 +64,10 @@ app.UseCors(x => x
     .SetIsOriginAllowed(origin => true) // allow any origin
     .AllowCredentials());
 
+
 //---
+app.UseHttpsRedirection();
+app.UseAuthentication(); // now using authentication middleware
 app.UseAuthorization();
 
 app.MapControllers();

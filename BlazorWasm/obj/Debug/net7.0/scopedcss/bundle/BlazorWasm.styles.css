@@ -1,3 +1,57 @@
+/* /Pages/CreatePost.razor.rz.scp.css */
+.card[b-uzy05ijp57] {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.field[b-uzy05ijp57] {
+    margin-top: 20px;
+}
+
+.acceptbtn[b-uzy05ijp57] {
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-row[b-uzy05ijp57] {
+    margin-top: 15px;
+}
+/* /Pages/CreateUser.razor.rz.scp.css */
+.card[b-8ioxdxedwk] {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.field[b-8ioxdxedwk] {
+    margin-top: 20px;
+}
+
+.acceptbtn[b-8ioxdxedwk] {
+    background-color:lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-row[b-8ioxdxedwk]{
+    margin-top: 15px;
+}
 /* /Pages/Login.razor.rz.scp.css */
 .card[b-ggyo7swwbw] {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -42,6 +96,58 @@
 
 .icon:hover[b-lhd5b4yoyf] {
     transform: scale(1.2); /* Forstør ikonet lidt ved hover */
+}
+/* /Pages/MyPosts.razor.rz.scp.css */
+.filter-bar[b-vfu6vvyj55] {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.funnel[b-vfu6vvyj55]{
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.filter[b-vfu6vvyj55] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+/* /Pages/ViewPosts.razor.rz.scp.css */
+.filter-bar[b-agzgme1hb0] {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.funnel[b-agzgme1hb0]{
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.filter[b-agzgme1hb0] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+/* /Pages/ViewUsers.razor.rz.scp.css */
+.user-card[b-os2xeex0iu] {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 10px;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-2ar46ifnr2] {
