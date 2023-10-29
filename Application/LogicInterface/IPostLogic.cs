@@ -1,5 +1,5 @@
-﻿using Application.DaoInterfaces;
-using Shared.Auth;
+﻿using Shared.Models;
+using Shared.Models;
 using Shared.Dtos;
 
 namespace Application.LogicInterface;

@@ -3,9 +3,11 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
- using Shared.Auth;
+ using Shared.Models;
  using Shared.Dtos;
 using WebApi.Services;
+using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
+
 
 namespace WebApi.Controllers;
 
@@ -21,30 +23,20 @@ public class AuthController : ControllerBase
         this.config = config;
         this.authService = authService;
     }
-
-    [HttpPost, Route("register")]
-    public async Task<ActionResult> Register([FromBody] User user)
+    
+    private List<Claim> GenerateClaims(User user)
     {
-        await authService.RegisterUser(user);
-        return Ok();
-    }
-
-    [HttpPost, Route("login")]
-    public async Task<ActionResult> Login([FromBody] UserLoginDto userLoginDto)
-    {
-        try
+        var claims = new[]
         {
-            User user = await authService.ValidateUser(userLoginDto.Username, userLoginDto.Password);
-            string token = GenerateJwt(user);
-        
-            return Ok(token);
-        }
-        catch (Exception e)
-        {
-            return BadRequest(e.Message);
-        }
+            new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
+            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(ClaimTypes.Role, user.Role),
+            
+        };
+        return claims.ToList();
     }
-
     private string GenerateJwt(User user)
     {
         List<Claim> claims = GenerateClaims(user);
@@ -66,18 +58,23 @@ public class AuthController : ControllerBase
         string serializedToken = new JwtSecurityTokenHandler().WriteToken(token);
         return serializedToken;
     }
-
-    private List<Claim> GenerateClaims(User user)
+    
+    
+   
+    [HttpPost, Route("login")]
+    public async Task<ActionResult> Login([FromBody] UserLoginDto userLoginDto)
     {
-        var claims = new[]
+        try
         {
-            new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-            new Claim(ClaimTypes.Name, user.UserName),
-            new Claim(ClaimTypes.Role, user.Role),
-            
-        };
-        return claims.ToList();
+            User user = await authService.ValidateUser(userLoginDto.Username, userLoginDto.Password);
+            string token = GenerateJwt(user);
+        
+            return Ok(token);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
     }
+    
 }

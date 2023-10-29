@@ -2,16 +2,16 @@
 using System.Text;
 using System.Text.Json;
 using Shared.Dtos;
-using Shared.Auth;
-using HttpClients.ClientInterfaces;
+using Shared.Models;
+using HttpClients.ClientInterface;
 
-namespace HttpClients.Implementations;
+namespace HttpClients.Impl;
 
-public class PostHttpClient : IPostService
+public class PostsHttpClient : IPostService
 {
     private readonly HttpClient client;
 
-    public PostHttpClient(HttpClient client)
+    public PostsHttpClient(HttpClient client)
     {
         this.client = client;
     }

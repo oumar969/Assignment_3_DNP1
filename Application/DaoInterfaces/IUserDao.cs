@@ -1,5 +1,6 @@
-﻿using Shared.Auth;
+﻿using Shared.Models;
 using Shared.Dtos;
+using Shared.Models;
 
 namespace Application.DaoInterfaces;
 

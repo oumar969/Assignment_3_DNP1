@@ -1,6 +1,6 @@
 ﻿@page "/ViewPosts"
-@using global::Shared.Auth
-@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@using HttpClients.ClientInterface
 @using Microsoft.AspNetCore.Components
 @inject IPostService postService;
 @inject NavigationManager navMgr
@@ -9,7 +9,7 @@
         <h3>Posts</h3>
 <div class="filter-bar">
     <div class="filters-container">
-        <img src="icons/@(doShowFilters ? "clear_" : "")funnel.png" class="funnel" @onclick="@(() => doShowFilters = !doShowFilters)" alt="Funnel"/>
+        <img src="image/@(doShowFilters ? "clear_" : "")funnel.png" class="funnel" @onclick="@(() => doShowFilters = !doShowFilters)" alt="Funnel"/>
         @if (doShowFilters)
         {
             <div class="filter">
@@ -65,7 +65,7 @@ else
         @foreach (var item in posts)
         {
             <tr>
-                <td>@item.PostId</td>
+                <td>@item.Id</td>
                 <td>@item.Owner.UserName</td>
                 <td>@item.Title</td>
                 <td>@item.Body</td>
@@ -114,7 +114,7 @@ else
 
     private int CompareById(Post x, Post y)
     {
-        if (x.PostId > y.PostId)
+        if (x.Id > y.Id)
         {
             return 1;
         }

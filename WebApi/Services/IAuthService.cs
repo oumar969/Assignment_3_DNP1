@@ -1,4 +1,4 @@
-﻿using Shared.Auth;
+﻿using Shared.Models;
 
 namespace WebApi.Services;
 

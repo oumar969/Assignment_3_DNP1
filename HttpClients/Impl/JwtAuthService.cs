@@ -2,10 +2,10 @@
 using System.Text;
 using System.Text.Json;
 using Shared.Dtos;
-using Shared.Auth;
-using HttpClients.ClientInterfaces;
+using Shared.Models;
+using HttpClients.ClientInterface;
 
-namespace HttpClients.Implementations;
+namespace HttpClients.Impl;
 
 public class JwtAuthService : IAuthService
 {
@@ -13,6 +13,18 @@ public class JwtAuthService : IAuthService
 
     // this private variable for simple caching
     public static string? Jwt { get; private set; } = "";
+
+    public async Task RegisterAsync(User user)
+    {
+        string userAsJson = JsonSerializer.Serialize(user);
+        StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
+        HttpResponseMessage response = await client.PostAsync("https://localhost:7130/auth/register", content);
+        string responseContent = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(responseContent);
+        }    }
 
     public Task<ClaimsPrincipal> GetAuthAsync()
     {
@@ -97,16 +109,5 @@ public class JwtAuthService : IAuthService
         return Task.CompletedTask;
     }
 
-    public async Task RegisterAsync(User user)
-    {
-        string userAsJson = JsonSerializer.Serialize(user);
-        StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7130/auth/register", content);
-        string responseContent = await response.Content.ReadAsStringAsync();
-
-        if (!response.IsSuccessStatusCode)
-        {
-            throw new Exception(responseContent);
-        }
-    }
+    
 }

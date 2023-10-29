@@ -1,5 +1,5 @@
-﻿using Shared.Auth;
-using Shared.Dtos;
+﻿using Shared.Dtos;
+using Shared.Models;
 
 namespace Application.LogicInterface;
 

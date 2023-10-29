@@ -1,7 +1,7 @@
-﻿using Shared.Auth;
-using Shared.Dtos;
+﻿using Shared.Dtos;
+using Shared.Models;
 
-namespace HttpClients.ClientInterfaces;
+namespace HttpClients.ClientInterface;
 
 public interface IUserService
 {

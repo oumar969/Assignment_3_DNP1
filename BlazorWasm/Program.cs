@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using BlazorWasm;
-using BlazorWASM.Auth;
-using HttpClients.ClientInterfaces;
-using HttpClients.Implementations;
+using BlazorWasm.Auth;
+using HttpClients.ClientInterface;
+using HttpClients.Impl;
 using Microsoft.AspNetCore.Components.Authorization;
 using Shared.Auth;
  
@@ -14,9 +14,9 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 builder.Services.AddScoped<IAuthService, JwtAuthService>();
-builder.Services.AddScoped<IPostService, PostHttpClient>();
+builder.Services.AddScoped<IPostService, PostsHttpClient>();
 
-builder.Services.AddScoped<IUserService, UserHttpClient>();
+builder.Services.AddScoped<IUserService, UsersHttpClient>();
 
 AuthorizationPolicies.AddPolicies(builder.Services);
 

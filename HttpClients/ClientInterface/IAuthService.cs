@@ -1,6 +1,6 @@
-﻿using Shared.Auth;
+﻿using Shared.Models;
 
-namespace HttpClients.ClientInterfaces;
+namespace HttpClients.ClientInterface;
 
 using System.Security.Claims;
 

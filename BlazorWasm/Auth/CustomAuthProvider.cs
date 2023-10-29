@@ -1,6 +1,6 @@
-﻿using HttpClients.ClientInterfaces;
+﻿using HttpClients.ClientInterface;
 
-namespace BlazorWASM.Auth;
+namespace BlazorWasm.Auth;
 
 using System.Security.Claims;
 using Microsoft.AspNetCore.Components.Authorization;

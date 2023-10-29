@@ -1,7 +1,7 @@
 ﻿@page "/MyPosts"
-@using HttpClients.ClientInterfaces
+@using HttpClients.ClientInterface
 @using System.Security.Claims
-@using global::Shared.Auth
+@using global::Shared.Models
 @using Microsoft.AspNetCore.Components
 @attribute [Authorize]
 @inject IPostService postService;
@@ -10,7 +10,7 @@
 <h3>Posts</h3>
 <div class="filter-bar">
     <div class="filters-container">
-        <img src="icons/@(doShowFilters ? "clear_" : "")funnel.png" class="funnel" @onclick="@(() => doShowFilters = !doShowFilters)" alt="Funnel"/>
+        <img src="image/@(doShowFilters ? "clear_" : "")funnel.png" class="funnel" @onclick="@(() => doShowFilters = !doShowFilters)" alt="Funnel"/>
         @if (doShowFilters)
         {
             <div class="filter">
@@ -60,15 +60,15 @@ else
         @foreach (var item in posts)
         {
             <tr>
-                <td>@item.PostId</td>
+                <td>@item.Id</td>
                 <td>@item.Owner.UserName</td>
                 <td>@item.Title</td>
                 <td>@item.Body</td>
                 <td>
-                    <img src="icons/edit.gif" class="funnel" @onclick="@(() => navMgr.NavigateTo($"/EditPost/{item.PostId}"))"/>
+                    <img src="image /edit.gif" class="funnel" @onclick="@(() => navMgr.NavigateTo($"/EditPost/{item.Id}"))"/>
                 </td>
                 <td>
-                    <label @onclick="@(() => RemoveTodo(item.PostId))" style="cursor:pointer; color: red; font-weight: bold">
+                    <label @onclick="@(() => RemoveTodo(item.Id))" style="cursor:pointer; color: red; font-weight: bold">
                         &#x2717;
                     </label>
                 </td>
@@ -135,7 +135,7 @@ else
             await postService.DeleteAsync(postId);
         
             var list = new List<Post>(posts!);
-            list.RemoveAll(post => post.PostId == postId);
+            list.RemoveAll(post => post.Id == postId);
             posts = list.AsEnumerable();
         }
         catch (Exception e)
@@ -148,7 +148,7 @@ else
     
     private int CompareById(Post x, Post y)
     {
-        if (x.PostId > y.PostId)
+        if (x.Id > y.Id)
         {
             return 1;
         }

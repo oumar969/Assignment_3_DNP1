@@ -16,6 +16,6 @@ public class PostCreationDto
     
     public override string ToString()
     {
-        return "ownerId: " + OwnerId + "/title: " + Title + "/body: " + Body;
+        return "id: " + OwnerId + "/title: " + Title + "/body: " + Body;
     }
 }

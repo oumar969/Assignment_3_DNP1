@@ -1,5 +1,5 @@
 ﻿using Application.DaoInterfaces;
-using Shared.Auth;
+using Shared.Models;
 using Shared.Dtos;
 
 namespace FileData.DAO_s;
@@ -17,11 +17,11 @@ public class PostFileDao : IPostDao
         int id = 1;
         if (context.Posts.Any())
         {
-            id = context.Posts.Max(t => t.PostId);
+            id = context.Posts.Max(t => t.Id);
             id++;
         }
 
-        post.PostId = id;
+        post.Id = id;
         
         context.Posts.Add(post);
         context.SaveChanges();
@@ -60,15 +60,15 @@ public class PostFileDao : IPostDao
 
     public Task<Post?> GetByIdAsync(int postId)
     {
-        Post? existing = context.Posts.FirstOrDefault(t => t.PostId == postId);
+        Post? existing = context.Posts.FirstOrDefault(t => t.Id == postId);
         return Task.FromResult(existing);    }
 
     public Task UpdateAsync(Post dto)
     {
-        Post? existing = context.Posts.FirstOrDefault(post => post.PostId == dto.PostId);
+        Post? existing = context.Posts.FirstOrDefault(post => post.Id == dto.Id);
         if (existing == null)
         {
-            throw new Exception($"Todo with id {dto.PostId} does not exist!");
+            throw new Exception($"Todo with id {dto.Id} does not exist!");
         }
 
         context.Posts.Remove(existing);
@@ -80,7 +80,7 @@ public class PostFileDao : IPostDao
 
     public Task DeleteAsync(int id)
     {
-        Post? existing = context.Posts.FirstOrDefault(todo => todo.PostId == id);
+        Post? existing = context.Posts.FirstOrDefault(todo => todo.Id == id);
         if (existing == null)
         {
             throw new Exception($"Post with id {id} does not exist!");

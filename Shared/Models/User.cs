@@ -1,4 +1,4 @@
-﻿namespace Shared.Auth;
+﻿namespace Shared.Models;
 
 public class User
 {

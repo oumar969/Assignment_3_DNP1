@@ -23,30 +23,25 @@
       "UserName": "admin1",
       "Password": "admin1",
       "Role": "Admin"
+    },
+    {
+      "Id": 5,
+      "UserName": "Refki",
+      "Password": "Refki",
+      "Role": "User"
     }
   ],
   "Posts": [
     {
-      "PostId": 1,
-      "Title": "Hasbullah",
-      "Body": "the new hero of UFC",
+      "Id": 1,
       "Owner": {
         "Id": 1,
-        "UserName": null,
-        "Password": "12345",
+        "UserName": "Abdull",
+        "Password": "Abdull",
         "Role": "User"
-      }
-    },
-    {
-      "PostId": 2,
-      "Title": "sadasf as",
-      "Body": "asfa asdasd asfas ",
-      "Owner": {
-        "Id": 2,
-        "UserName": null,
-        "Password": "admin",
-        "Role": "User"
-      }
+      },
+      "Title": "Refki",
+      "Body": "Refki"
     }
   ]
 }

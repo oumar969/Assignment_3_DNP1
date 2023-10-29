@@ -1,4 +1,4 @@
-﻿using Shared.Auth;
+﻿using Shared.Models;
 using Shared.Dtos;
 
 namespace Application.DaoInterfaces;
