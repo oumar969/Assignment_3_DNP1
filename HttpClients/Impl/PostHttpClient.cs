@@ -1,11 +1,11 @@
 ﻿using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
-using HttpClients.ClientInterface;
-using Shared.Auth;
 using Shared.Dtos;
+using Shared.Auth;
+using HttpClients.ClientInterfaces;
 
-namespace HttpClients.Impl;
+namespace HttpClients.Implementations;
 
 public class PostHttpClient : IPostService
 {
@@ -16,7 +16,7 @@ public class PostHttpClient : IPostService
         this.client = client;
     }
     
-     public async Task CreateAsync(PostCreationDto dto)
+    public async Task CreateAsync(PostCreationDto dto)
     {
         HttpResponseMessage response = await client.PostAsJsonAsync("/posts",dto);
         string content = await response.Content.ReadAsStringAsync();

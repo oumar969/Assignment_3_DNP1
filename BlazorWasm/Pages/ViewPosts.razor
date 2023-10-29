@@ -1,6 +1,5 @@
 ﻿@page "/ViewPosts"
 @using global::Shared.Auth
-@using HttpClients.ClientInterface
 @using HttpClients.ClientInterfaces
 @using Microsoft.AspNetCore.Components
 @inject IPostService postService;
@@ -67,7 +66,7 @@ else
         {
             <tr>
                 <td>@item.PostId</td>
-                <td>@item.Owner.Username</td>
+                <td>@item.Owner.UserName</td>
                 <td>@item.Title</td>
                 <td>@item.Body</td>
             </tr>

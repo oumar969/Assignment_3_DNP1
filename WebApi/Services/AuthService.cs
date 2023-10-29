@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 using FileData;
 using Shared.Auth;
+using WebApi.Services;
 
-namespace WebApi.Services;
+namespace WebAPI.Services;
 
 public class AuthService : IAuthService
 {
@@ -16,10 +18,16 @@ public class AuthService : IAuthService
 
     public Task<User> ValidateUser(string username, string password)
     {
-        file.LoadData();
+        //    file.LoadData();
+        //    User? existingUser = file.Users.FirstOrDefault(u => 
+        //       u.UserName.Equals(username, StringComparison.OrdinalIgnoreCase));
+        ;
+
+     
         Console.WriteLine(username+password);
         User? existingUser = file.Users.FirstOrDefault(u => 
-            u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+            u.UserName.Equals(username, StringComparison.OrdinalIgnoreCase));
+     
         
         if (existingUser == null)
         {
@@ -38,7 +46,7 @@ public class AuthService : IAuthService
     public Task RegisterUser(User user)
     {
 
-        if (string.IsNullOrEmpty(user.Username))
+        if (string.IsNullOrEmpty(user.UserName))
         {
             throw new ValidationException("Username cannot be null");
         }
@@ -51,8 +59,8 @@ public class AuthService : IAuthService
         
         // save to persistence instead of list
         
-        file.Users.Add(user);
-        file.SaveChanges();
+        //     file.Users.Add(user);
+        //     file.SaveChanges();
         
         return Task.CompletedTask;
     }

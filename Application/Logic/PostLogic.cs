@@ -44,7 +44,7 @@ public class PostLogic : IPostLogic
             throw new Exception($"Post with id {postId} not found");
         }
 
-        return new PostBasicDto(post.PostId, post.Owner.Username, post.Title, post.Body);
+        return new PostBasicDto(post.PostId, post.Owner.UserName, post.Title, post.Body);
         
     }
 

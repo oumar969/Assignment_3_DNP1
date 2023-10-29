@@ -2,25 +2,27 @@
   "Users": [
     {
       "Id": 1,
-      "Username": "Oumar",
-      "Password": "12345",
-      "Email": null,
-      "Domain": null,
-      "Name": null,
-      "Role": "User",
-      "Age": 0,
-      "SecurityLevel": 0
+      "UserName": "Abdull",
+      "Password": "Abdull",
+      "Role": "User"
     },
     {
       "Id": 2,
-      "Username": "Hasbi",
-      "Password": "admin",
-      "Email": null,
-      "Domain": null,
-      "Name": null,
-      "Role": "User",
-      "Age": 0,
-      "SecurityLevel": 0
+      "UserName": "Admin",
+      "Password": "Admin",
+      "Role": "User"
+    },
+    {
+      "Id": 3,
+      "UserName": "aasd",
+      "Password": "asasdd",
+      "Role": "User"
+    },
+    {
+      "Id": 4,
+      "UserName": "admin1",
+      "Password": "admin1",
+      "Role": "Admin"
     }
   ],
   "Posts": [
@@ -30,14 +32,9 @@
       "Body": "the new hero of UFC",
       "Owner": {
         "Id": 1,
-        "Username": "Oumar",
+        "UserName": null,
         "Password": "12345",
-        "Email": null,
-        "Domain": null,
-        "Name": null,
-        "Role": "User",
-        "Age": 0,
-        "SecurityLevel": 0
+        "Role": "User"
       }
     },
     {
@@ -46,14 +43,9 @@
       "Body": "asfa asdasd asfas ",
       "Owner": {
         "Id": 2,
-        "Username": "Hasbi",
+        "UserName": null,
         "Password": "admin",
-        "Email": null,
-        "Domain": null,
-        "Name": null,
-        "Role": "User",
-        "Age": 0,
-        "SecurityLevel": 0
+        "Role": "User"
       }
     }
   ]

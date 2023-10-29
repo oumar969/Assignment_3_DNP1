@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Json;
 using System.Text.Json;
 
-using HttpClients.ClientInterface;
+using HttpClients.ClientInterfaces;
 using Shared.Auth;
 using Shared.Dtos;
 

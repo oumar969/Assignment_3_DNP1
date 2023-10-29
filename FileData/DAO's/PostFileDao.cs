@@ -36,7 +36,7 @@ public class PostFileDao : IPostDao
         if (!string.IsNullOrEmpty(searchParameters.Username))
         {
             result = context.Posts.Where(todo =>
-                todo.Owner.Username.Equals(searchParameters.Username, StringComparison.OrdinalIgnoreCase));
+                todo.Owner.UserName.Equals(searchParameters.Username, StringComparison.OrdinalIgnoreCase));
         }
 
         if (searchParameters.UserId != null)

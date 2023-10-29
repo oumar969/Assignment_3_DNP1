@@ -2,9 +2,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using BlazorWasm;
 using BlazorWASM.Auth;
-using HttpClients.ClientInterface;
 using HttpClients.ClientInterfaces;
-using HttpClients.Impl;
 using HttpClients.Implementations;
 using Microsoft.AspNetCore.Components.Authorization;
 using Shared.Auth;
@@ -26,14 +24,14 @@ AuthorizationPolicies.AddPolicies(builder.Services);
 builder.Services.AddScoped(
     sp => 
         new HttpClient { 
-            BaseAddress = new Uri("http://localhost:7130") 
+            BaseAddress = new Uri("https://localhost:7130") 
         }
 );
 
 
 
 builder.Services.AddScoped(sp => new HttpClient());
-// builder.Services.AddScoped(sp => new HttpClient() { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddScoped(sp => new HttpClient() { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 builder.Services.AddAuthorizationCore();
 

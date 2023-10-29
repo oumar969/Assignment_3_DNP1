@@ -1,7 +1,7 @@
 ﻿using Shared.Auth;
 using Shared.Dtos;
 
-namespace HttpClients.ClientInterface;
+namespace HttpClients.ClientInterfaces;
 
 public interface IUserService
 {

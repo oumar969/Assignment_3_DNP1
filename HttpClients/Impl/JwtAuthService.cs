@@ -1,9 +1,9 @@
 ﻿using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
-using HttpClients.ClientInterfaces;
-using Shared.Auth;
 using Shared.Dtos;
+using Shared.Auth;
+using HttpClients.ClientInterfaces;
 
 namespace HttpClients.Implementations;
 
@@ -14,7 +14,6 @@ public class JwtAuthService : IAuthService
     // this private variable for simple caching
     public static string? Jwt { get; private set; } = "";
 
-    
     public Task<ClaimsPrincipal> GetAuthAsync()
     {
         ClaimsPrincipal principal = CreateClaimsPrincipal();
@@ -23,6 +22,7 @@ public class JwtAuthService : IAuthService
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
 
+    // Below methods stolen from https://github.com/SteveSandersonMS/presentation-2019-06-NDCOslo/blob/master/demos/MissionControl/MissionControl.Client/Util/ServiceExtensions.cs
     private static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
     {
         string payload = jwt.Split('.')[1];
@@ -71,8 +71,7 @@ public class JwtAuthService : IAuthService
 
         string userAsJson = JsonSerializer.Serialize(userLoginDto);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
-
-        
+//BUG figure out how to hardcode port
         
         HttpResponseMessage response = await client.PostAsync("https://localhost:7130/auth/login", content);
         string responseContent = await response.Content.ReadAsStringAsync();

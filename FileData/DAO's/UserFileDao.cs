@@ -33,7 +33,7 @@ public class UserFileDao : IUserDao
     public Task<User?> GetByUsernameAsync(string Username)
     {
         User? existing = context.Users.FirstOrDefault(u =>
-            u.Username.Equals(Username, StringComparison.OrdinalIgnoreCase)
+            u.UserName.Equals(Username, StringComparison.OrdinalIgnoreCase)
         );
         return Task.FromResult(existing);
     }
@@ -43,7 +43,7 @@ public class UserFileDao : IUserDao
         IEnumerable<User> users = context.Users.AsEnumerable();
         if (searchParameters.UsernameContains != null)
         {
-            users = context.Users.Where(u => u.Username.Contains(searchParameters.UsernameContains, StringComparison.OrdinalIgnoreCase));
+            users = context.Users.Where(u => u.UserName.Contains(searchParameters.UsernameContains, StringComparison.OrdinalIgnoreCase));
         }
 
         return Task.FromResult(users);

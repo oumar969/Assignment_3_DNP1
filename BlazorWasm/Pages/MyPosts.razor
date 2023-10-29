@@ -1,9 +1,7 @@
 ﻿@page "/MyPosts"
 @using HttpClients.ClientInterfaces
 @using System.Security.Claims
-@using System.Collections
 @using global::Shared.Auth
-@using HttpClients.ClientInterface
 @using Microsoft.AspNetCore.Components
 @attribute [Authorize]
 @inject IPostService postService;
@@ -63,7 +61,7 @@ else
         {
             <tr>
                 <td>@item.PostId</td>
-                <td>@item.Owner.Username</td>
+                <td>@item.Owner.UserName</td>
                 <td>@item.Title</td>
                 <td>@item.Body</td>
                 <td>
