@@ -1,14 +1,14 @@
 .card {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 250px;
+    width: 350px;
     padding: 25px;
     text-align: center;
     margin: auto;
     margin-top: 50px;
-    background-color: #fff; /* Baggrundsfarve til kortet */
-    border-radius: 30px; /* Afrundede kanter */
-    border: 1px solid #ddd; /* Kortkant */
+    background-color: #9395cc; /* Baggrundsfarve til kortet */
+    border-radius: 40px; /* Afrundede kanter */
+    border: 6px solid #ddd; /* Kortkant */
 }
 
 .field {
@@ -20,7 +20,7 @@
     background-color: #462696;
     border: none;
     border-radius:30px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     color: #fff; /* Tekstfarve */
     cursor: pointer; /* Ændrer markøren ved hover */
 }

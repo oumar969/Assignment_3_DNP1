@@ -15,11 +15,11 @@
     }
     else if (!users.Any())
     {
-        <label>No users, you cannot create a Todo</label>
+        <label>No users, you cannot create a Post</label>
     }
     else if (dto == null)
     {
-        <label>Loading Todo data..</label>
+        <label>Loading Post data..</label>
     }
     else
     {
@@ -57,13 +57,13 @@
         try
         {
             users = await userService.GetUsers();
-            PostBasicDto todoData = await postService.GetByIdAsync(Id);
-            User currentlyAssigned = users.First(user => user.UserName.Equals(todoData.OwnerName));
+            PostBasicDto postData = await postService.GetByIdAsync(Id);
+            User currentlyAssigned = users.First(user => user.UserName.Equals(postData.OwnerName));
 
             dto = new(Id)
             {
-                Title = todoData.Title,
-                Body = todoData.Body,
+                Title = postData.Title,
+                Body = postData.Body,
                 OwnerId = currentlyAssigned.Id
             };
         }

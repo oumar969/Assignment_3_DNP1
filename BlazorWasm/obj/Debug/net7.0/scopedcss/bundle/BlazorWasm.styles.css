@@ -2,12 +2,14 @@
 .card[b-uzy05ijp57] {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 250px;
+    width: 500px;
     padding: 25px;
     text-align: center;
     margin: auto;
-    margin-top: 50px;
-    border-radius: 15px;
+    margin-top: 90px;
+    border-radius: 45px;
+    background-color: #9395cc; /* Baggrundsfarve til kortet */
+    border: 6px solid #ddd; /* Kortkant */
 }
 
 .field[b-uzy05ijp57] {
@@ -15,7 +17,7 @@
 }
 
 .acceptbtn[b-uzy05ijp57] {
-    background-color: lightgreen;
+    background-color: #3d3d93;
     border-radius: 5px;
     padding: 5px;
     padding-left: 10px;
@@ -23,47 +25,69 @@
 }
 
 .button-row[b-uzy05ijp57] {
-    margin-top: 15px;
+    margin-top: 35px;
 }
 /* /Pages/CreateUser.razor.rz.scp.css */
 .card[b-8ioxdxedwk] {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 250px;
+    width: 350px;
     padding: 25px;
     text-align: center;
     margin: auto;
     margin-top: 50px;
-    border-radius: 15px;
+    background-color: #9395cc; /* Baggrundsfarve til kortet */
+    border-radius: 40px; /* Afrundede kanter */
+    border: 6px solid #ddd; /* Kortkant */
 }
 
 .field[b-8ioxdxedwk] {
     margin-top: 20px;
+    border-radius:30px;
+
 }
 
 .acceptbtn[b-8ioxdxedwk] {
-    background-color:lightgreen;
-    border-radius: 5px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #462696;
+    border: none;
+    border-radius:30px;
+    padding: 20px 40px;
+    color: #fff; /* Tekstfarve */
+    cursor: pointer; /* Ændrer markøren ved hover */
 }
 
 .button-row[b-8ioxdxedwk]{
-    margin-top: 15px;
+    margin-top: 35px;
+}
+/* /Pages/Index.razor.rz.scp.css */
+body[b-xzgi4u3qtl]
+{
+    background-color: #86a5bd;
+}
+h1[b-xzgi4u3qtl] {
+    color: #3d3d93;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+}
+p[b-xzgi4u3qtl] {
+    color: #3d3d93;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
 }
 /* /Pages/Login.razor.rz.scp.css */
 .card[b-ggyo7swwbw] {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 250px;
+    width: 350px;
     padding: 25px;
     text-align: center;
     margin: auto;
     margin-top: 50px;
-    background-color: #fff; /* Baggrundsfarve til kortet */
-    border-radius: 30px; /* Afrundede kanter */
-    border: 1px solid #ddd; /* Kortkant */
+    background-color: #9395cc; /* Baggrundsfarve til kortet */
+    border-radius: 40px; /* Afrundede kanter */
+    border: 6px solid #ddd; /* Kortkant */
 }
 
 .field[b-ggyo7swwbw] {
@@ -75,7 +99,7 @@
     background-color: #462696;
     border: none;
     border-radius:30px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     color: #fff; /* Tekstfarve */
     cursor: pointer; /* Ændrer markøren ved hover */
 }
@@ -148,6 +172,9 @@
     margin: 25px;
     padding: 15px;
     border-radius: 10px;
+    width: 300px; /* Adjust the width to make the card larger */
+    height: 200px; /* Adjust the height to make the card taller */
+    font-size: 20px; /* Adjust the font size to make the text bigger */
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-2ar46ifnr2] {

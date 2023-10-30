@@ -4,4 +4,7 @@
     margin: 25px;
     padding: 15px;
     border-radius: 10px;
+    width: 300px; /* Adjust the width to make the card larger */
+    height: 200px; /* Adjust the height to make the card taller */
+    font-size: 20px; /* Adjust the font size to make the text bigger */
 }

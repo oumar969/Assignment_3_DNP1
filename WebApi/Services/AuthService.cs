@@ -4,7 +4,7 @@ using FileData;
 using Shared.Models;
 using WebApi.Services;
 
-namespace WebAPI.Services;
+namespace WebApi.Services;
 
 public class AuthService : IAuthService
 {

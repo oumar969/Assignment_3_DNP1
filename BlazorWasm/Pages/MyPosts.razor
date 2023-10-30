@@ -33,7 +33,7 @@
 </div>
 
 <div>
-    <button @onclick="LoadTodos">Load</button>
+    <button @onclick="LoadPosts">Load</button>
 </div>
 
 @if (posts == null)
@@ -41,7 +41,7 @@
 }
 else if (!posts.Any())
 {
-    <p>No Todos to display</p>
+    <p>No Posts to display</p>
 }
 else
 {
@@ -65,10 +65,10 @@ else
                 <td>@item.Title</td>
                 <td>@item.Body</td>
                 <td>
-                    <img src="image /edit.gif" class="funnel" @onclick="@(() => navMgr.NavigateTo($"/EditPost/{item.Id}"))"/>
+                    <img src="image/edit.gif" class="funnel" @onclick="@(() => navMgr.NavigateTo($"/EditPost/{item.Id}"))"/>
                 </td>
                 <td>
-                    <label @onclick="@(() => RemoveTodo(item.Id))" style="cursor:pointer; color: red; font-weight: bold">
+                    <label @onclick="@(() => RemovePost(item.Id))" style="cursor:pointer; color: red; font-weight: bold">
                         &#x2717;
                     </label>
                 </td>
@@ -102,10 +102,10 @@ else
     {
         authState = await AuthState;
         user = authState.User;
-        await LoadTodos();
+        await LoadPosts();
     }
 
-    private async Task LoadTodos()
+    private async Task LoadPosts()
     {
         try
         {
@@ -127,7 +127,7 @@ else
         }
     }
     
-    private async Task RemoveTodo(int postId)
+    private async Task RemovePost(int postId)
     {
         msg = "";
         try

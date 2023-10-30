@@ -27,7 +27,7 @@ a, .btn-link {
 }
 
 .valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
+    outline: 1px solid #3d3d93;
 }
 
 .invalid {

@@ -40,7 +40,7 @@
 </div>
 
 <div>
-    <button @onclick="LoadTodos">Load</button>
+    <button @onclick="LoadPosts">Load</button>
 </div>
 
 @if (posts == null)
@@ -48,7 +48,7 @@
 }
 else if (!posts.Any())
 {
-    <p>No Todos to display</p>
+    <p>No Posts to display</p>
 }
 else
 {
@@ -91,10 +91,10 @@ else
     
     protected override async Task OnInitializedAsync()
     {
-        await LoadTodos();
+        await LoadPosts();
     }
 
-    private async Task LoadTodos()
+    private async Task LoadPosts()
     {
         try
         {

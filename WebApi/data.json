@@ -29,19 +29,19 @@
       "UserName": "Refki",
       "Password": "Refki",
       "Role": "User"
+    },
+    {
+      "Id": 6,
+      "UserName": "Bakbak",
+      "Password": "Bakbak",
+      "Role": "User"
+    },
+    {
+      "Id": 7,
+      "UserName": "dasdasd",
+      "Password": "asdasfasd",
+      "Role": "User"
     }
   ],
-  "Posts": [
-    {
-      "Id": 1,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Abdull",
-        "Password": "Abdull",
-        "Role": "User"
-      },
-      "Title": "Refki",
-      "Body": "Refki"
-    }
-  ]
+  "Posts": []
 }

@@ -2,14 +2,12 @@ using System.Text;
 using Application.DaoInterfaces;
 using Application.Logic;
 using Application.LogicInterface;
+using Shared.Auth;
 using FileData;
 using FileData.DAO_s;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Shared.Auth;
 using WebApi.Services;
-using WebAPI.Services;
-
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,15 +27,6 @@ builder.Services.AddScoped<IPostDao, PostFileDao>();
 builder.Services.AddScoped<IPostLogic, PostLogic>();
 AuthorizationPolicies.AddPolicies(builder.Services);
 builder.Services.AddScoped<IAuthService, AuthService>();
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowBlazorApp",
-        builder => builder.WithOrigins("http://localhost:5000") // Erstat med din Blazor-apps adresse
-            .AllowAnyHeader()
-            .AllowAnyMethod());
-});
-
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -61,8 +50,6 @@ app.UseCors(x => x
     .SetIsOriginAllowed(origin => true) // allow any origin
     .AllowCredentials());
 
-app.UseHttpsRedirection(); // Aktiver HTTPS-omdirigering her
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -71,7 +58,6 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.UseCors("AllowBlazorApp");
 
 app.UseHttpsRedirection();
 
