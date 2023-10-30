@@ -1,16 +1,10 @@
 {
   "Users": [
     {
-      "Id": 1,
-      "UserName": "Abdull",
-      "Password": "Abdull",
-      "Role": "User"
-    },
-    {
       "Id": 2,
       "UserName": "Admin",
       "Password": "Admin",
-      "Role": "User"
+      "Role": "Admin"
     },
     {
       "Id": 3,
@@ -41,7 +35,31 @@
       "UserName": "dasdasd",
       "Password": "asdasfasd",
       "Role": "User"
+    },
+    {
+      "Id": 8,
+      "UserName": "aaaaaaaaaa",
+      "Password": "aaaaaaaaaa",
+      "Role": "User"
+    },
+    {
+      "Id": 9,
+      "UserName": "Ole",
+      "Password": "OLEOLE",
+      "Role": "User"
     }
   ],
-  "Posts": []
+  "Posts": [
+    {
+      "Id": 1,
+      "Owner": {
+        "Id": 4,
+        "UserName": "admin1",
+        "Password": "admin1",
+        "Role": "Admin"
+      },
+      "Title": "DNP",
+      "Body": "DNPPPPP gang"
+    }
+  ]
 }

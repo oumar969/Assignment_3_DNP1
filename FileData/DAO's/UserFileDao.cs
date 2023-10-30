@@ -56,4 +56,41 @@ public class UserFileDao : IUserDao
         );
         return Task.FromResult(existing);
     }
+
+    public Task<User> UpdateAsync(User user)
+    {
+User? existing = context.Users.FirstOrDefault(u =>
+            u.Id == user.Id
+        );
+
+        if (existing == null)
+        {
+            throw new Exception($"User with ID {user.Id} not found!");
+        }
+
+        existing.UserName = user.UserName;
+        existing.Password = user.Password;
+        existing.Role = user.Role;
+
+        context.SaveChanges();
+
+        return Task.FromResult(existing);
+    }
+
+    public Task DeleteAsync(int id)
+    {
+        User? existing = context.Users.FirstOrDefault(u =>
+            u.Id == id
+        );
+
+        if (existing == null)
+        {
+            throw new Exception($"User with ID {id} not found!");
+        }
+
+        context.Users.Remove(existing);
+        context.SaveChanges();
+
+        return Task.CompletedTask;
+    }
 }

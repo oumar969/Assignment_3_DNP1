@@ -11,7 +11,6 @@ public class JwtAuthService : IAuthService
 {
     private readonly HttpClient client = new();
 
-    // this private variable for simple caching
     public static string? Jwt { get; private set; } = "";
 
     public async Task RegisterAsync(User user)
@@ -24,7 +23,8 @@ public class JwtAuthService : IAuthService
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(responseContent);
-        }    }
+        }
+    }
 
     public Task<ClaimsPrincipal> GetAuthAsync()
     {
@@ -34,7 +34,6 @@ public class JwtAuthService : IAuthService
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
 
-    // Below methods stolen from https://github.com/SteveSandersonMS/presentation-2019-06-NDCOslo/blob/master/demos/MissionControl/MissionControl.Client/Util/ServiceExtensions.cs
     private static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
     {
         string payload = jwt.Split('.')[1];

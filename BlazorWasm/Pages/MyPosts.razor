@@ -17,10 +17,6 @@
                 <label>Title contains:</label>
                 <input type="text" @bind="titleContainsFilter"/>
             </div>
-            /*<div class="filter">
-                <label>Body contains:</label>
-                <input type="text" @bind="bodyContainsFilter"/>
-            </div>*/
             <div>
                 @if (!string.IsNullOrEmpty(msg))
                 {
@@ -101,8 +97,9 @@ else
     protected override async Task OnInitializedAsync()
     {
         authState = await AuthState;
-        user = authState.User;
-        await LoadPosts();
+            user = authState.User;
+            await LoadPosts();
+        
     }
 
     private async Task LoadPosts()

@@ -36,6 +36,27 @@ public class UserLogic : IUserLogic
         return userDao.GetAsync(searchParameters);
     }
 
+    public Task<User> UpdateAsync(int id, UserUpdateDto dto)
+    {
+        User toUpdate = new User
+        {
+            Id = id, UserName = dto.UserName, Password = dto.Password,Role = dto.Role
+        };
+        
+        return userDao.UpdateAsync(toUpdate);
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        User? user = await userDao.GetByIdAsync(id);
+        if (user == null)
+        {
+            throw new Exception($"Post with ID {id} was not found!");
+        }
+
+        await userDao.DeleteAsync(id);
+    }
+
     private static void ValidateData(UserCreationDto userToCreate)
     {
         string userName = userToCreate.UserName;
@@ -52,5 +73,18 @@ public class UserLogic : IUserLogic
 
         if (passWord.Length > 15)
             throw new Exception("Password must be less than 16 characters!");
+
+        if (userName.Contains(" "))
+            throw new Exception("Username cannot contain spaces!");
+        
+        if(passWord.Contains(" "))
+            throw new Exception("Password cannot contain spaces!");
+        
+        if (userName.Contains("!"))
+            throw new Exception("Username cannot contain exclamation marks!");
+        
+        if(passWord.Contains("!"))
+            throw new Exception("Password cannot contain exclamation marks!");
+        
     }
 }

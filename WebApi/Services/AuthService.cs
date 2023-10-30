@@ -43,7 +43,7 @@ public class AuthService : IAuthService
     }
     
 
-    public Task RegisterUser(User user)
+    public Task<User> RegisterUser(User user)
     {
 
         if (string.IsNullOrEmpty(user.UserName))
@@ -55,13 +55,8 @@ public class AuthService : IAuthService
         {
             throw new ValidationException("Password cannot be null");
         }
-        // Do more user info validation here
         
-        // save to persistence instead of list
-        
-        //     file.Users.Add(user);
-        //     file.SaveChanges();
-        
-        return Task.CompletedTask;
+        return (Task<User>)Task.CompletedTask;
     }
+    
 }

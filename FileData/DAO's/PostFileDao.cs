@@ -49,12 +49,7 @@ public class PostFileDao : IPostDao
             result = result.Where(t =>
                 t.Title.Contains(searchParameters.TitleContains, StringComparison.OrdinalIgnoreCase));
         }
-
-        // if (!string.IsNullOrEmpty(searchParameters.BodyContains))
-        // {
-        //     result = result.Where(t =>
-        //         t.Body.Contains(searchParameters.BodyContains, StringComparison.OrdinalIgnoreCase));
-        // }
+        
         return Task.FromResult(result);
     }
 
@@ -68,7 +63,7 @@ public class PostFileDao : IPostDao
         Post? existing = context.Posts.FirstOrDefault(post => post.Id == dto.Id);
         if (existing == null)
         {
-            throw new Exception($"Todo with id {dto.Id} does not exist!");
+            throw new Exception($"Post with id {dto.Id} does not exist!");
         }
 
         context.Posts.Remove(existing);

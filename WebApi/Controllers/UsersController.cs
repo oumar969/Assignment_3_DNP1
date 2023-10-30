@@ -46,4 +46,34 @@ public class UsersController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+    
+    [HttpPatch("{id}")]
+    public async Task<ActionResult<User>> UpdateAsync(int id, UserUpdateDto dto)
+    {
+        try
+        {
+            User user = await userLogic.UpdateAsync(id, dto);
+            return Ok(user);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteAsync(int id)
+    {
+        try
+        {
+            await userLogic.DeleteAsync(id);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }
