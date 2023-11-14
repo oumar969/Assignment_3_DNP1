@@ -8,11 +8,11 @@ public class Post
 {
     [Key]
     public int Id { get; set; } // Unique identifier for the post
-    public User Owner { get; private set; } // Foreign key to link the post to the user who created it
+    public User Owner { get;  set; } // Foreign key to link the post to the user who created it
     public int OwnerId { get; set; }
 
-    public string Title { get; private set; } // Title of the post
-    public string Body { get;  } // Content of the post
+    public string Title { get;  set; } // Title of the post
+    public string Body { get; set; } // Content of the post
 
     public Post(int ownerId, string title, string body)
     {

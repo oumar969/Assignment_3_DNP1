@@ -1,4 +1,5 @@
 ﻿using Application.DaoInterfaces;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Shared.Dtos;
 using Shared.Models;
@@ -21,9 +22,38 @@ public class PostEfcDao : IPostDao
         return added.Entity;
     }
 
-    public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchParameters)
+    public async Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchParameters)
     {
-        throw new NotImplementedException();
+        IQueryable<Post> query = context.Posts.Include(post => post.Owner).AsQueryable();
+    
+        if (!string.IsNullOrEmpty(searchParameters.Username))
+        {
+            // we know username is unique, so just fetch the first
+            query = query.Where(todo =>
+                todo.Owner.UserName.ToLower().Equals(searchParameters.Username.ToLower()));
+        }
+    
+        if (searchParameters.UserId != null)
+        {
+            query = query.Where(t => t.Owner.Id == searchParameters.UserId);
+        }
+        
+    
+        if (!string.IsNullOrEmpty(searchParameters.TitleContains))
+        {
+            query = query.Where(t =>
+                t.Title.ToLower().Contains(searchParameters.TitleContains.ToLower()));
+        }
+        
+        //
+        // if(!string.IsNullOrEmpty(searchParameters.BodyContains))
+        // {
+        //     query = query.Where(t =>
+        //         t.Body.ToLower().Contains(searchParameters.BodyContains.ToLower()));
+        // }
+
+        List<Post> result = await query.ToListAsync();
+        return result;
     }
 
     public Task<Post?> GetByIdAsync(int postId)

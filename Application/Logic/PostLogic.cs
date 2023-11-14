@@ -25,7 +25,7 @@ public class PostLogic : IPostLogic
         }
 
         ValidateTodo(dto);
-        Post post = new Post(user.Id, dto.Title, dto.Body);
+        Post post = new Post(/*user.Id*/user, dto.Title, dto.Body);
         Post created = await _postDao.CreateAsync(post);
         return created;
     }
@@ -60,8 +60,8 @@ public class PostLogic : IPostLogic
                 throw new Exception($"User with id {dto.OwnerId} was not found.");
             }
         }
-
-        int userToUse = existing?.OwnerId ?? 0; // antager, at OwnerId er af typen int
+        //int userToUse = existing?.OwnerId ?? 0; // antager, at OwnerId er af typen int
+        User userToUse = user ?? existing.Owner;
         string titleToUse = dto.Title ?? existing.Title;
         string bodyToUse = dto.Body ?? existing.Body;
 
