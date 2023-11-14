@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\BlazorWasm.csproj": {}
+    "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\BlazorWasm\\BlazorWasm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\BlazorWasm.csproj": {
+    "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\BlazorWasm\\BlazorWasm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\BlazorWasm.csproj",
+        "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\BlazorWasm\\BlazorWasm.csproj",
         "projectName": "BlazorWasm",
-        "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\BlazorWasm.csproj",
+        "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\BlazorWasm\\BlazorWasm.csproj",
         "packagesPath": "C:\\Users\\Oumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\BlazorWasm\\obj\\",
+        "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\BlazorWasm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,11 +29,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\HttpClients\\HttpClients.csproj": {
-                "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\HttpClients\\HttpClients.csproj"
+              "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\HttpClients\\HttpClients.csproj": {
+                "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\HttpClients\\HttpClients.csproj"
               },
-              "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj"
+              "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\HttpClients\\HttpClients.csproj": {
+    "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\HttpClients\\HttpClients.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\HttpClients\\HttpClients.csproj",
+        "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\HttpClients\\HttpClients.csproj",
         "projectName": "HttpClients",
-        "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\HttpClients\\HttpClients.csproj",
+        "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\HttpClients\\HttpClients.csproj",
         "packagesPath": "C:\\Users\\Oumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\HttpClients\\obj\\",
+        "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\HttpClients\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -118,8 +118,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj"
+              "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj"
               }
             }
           }
@@ -153,14 +153,14 @@
         }
       }
     },
-    "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj": {
+    "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Oumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

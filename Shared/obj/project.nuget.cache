@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rEOcwbsEDDBE3o9uASYI1RxeEFa/FIPLW8ljwdY+coQ4AeAP4jJ9VjevMLwrngbLEmu4V17fs5wmY4chrlQhqQ==",
+  "dgSpecHash": "V6k51YI/zYOoRrR4QAe7vBx7DYGoAwpr+ABD/BPQB10O7G3i8F8OjKa+/J1h4j3l90O0K/OeptrnKYkmjTN8Bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Oumar\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.12\\microsoft.aspnetcore.authorization.7.0.12.nupkg.sha512",
     "C:\\Users\\Oumar\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.12\\microsoft.aspnetcore.metadata.7.0.12.nupkg.sha512",

@@ -363,6 +363,19 @@
           "bin/placeholder/Application.dll": {}
         }
       },
+      "EfcDataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EfcDataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EfcDataAccess.dll": {}
+        }
+      },
       "FileData/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1191,6 +1204,11 @@
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
     },
+    "EfcDataAccess/1.0.0": {
+      "type": "project",
+      "path": "../EfcDataAccess/EfcDataAccess.csproj",
+      "msbuildProject": "../EfcDataAccess/EfcDataAccess.csproj"
+    },
     "FileData/1.0.0": {
       "type": "project",
       "path": "../FileData/FileData.csproj",
@@ -1205,6 +1223,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Application >= 1.0.0",
+      "EfcDataAccess >= 1.0.0",
       "FileData >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.12",
       "Microsoft.AspNetCore.OpenApi >= 7.0.2",
@@ -1219,11 +1238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Oumar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1241,14 +1260,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Application\\Application.csproj"
+            "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Application\\Application.csproj"
             },
-            "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\FileData\\FileData.csproj": {
-              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\FileData\\FileData.csproj"
+            "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\EfcDataAccess\\EfcDataAccess.csproj": {
+              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\EfcDataAccess\\EfcDataAccess.csproj"
             },
-            "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment1-2 DNP1\\Shared\\Shared.csproj"
+            "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\FileData\\FileData.csproj": {
+              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\FileData\\FileData.csproj"
+            },
+            "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Oumar\\RiderProjects\\Assignment_3_DNP1\\Shared\\Shared.csproj"
             }
           }
         }

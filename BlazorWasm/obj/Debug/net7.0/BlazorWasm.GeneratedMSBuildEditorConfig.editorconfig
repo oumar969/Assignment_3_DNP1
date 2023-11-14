@@ -9,77 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = BlazorWasm
 build_property.RootNamespace = BlazorWasm
-build_property.ProjectDir = C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm\
+build_property.ProjectDir = C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\BlazorWasm\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\BlazorWasm
+build_property.MSBuildProjectDirectory = C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\BlazorWasm
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/App.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/EditPost.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/EditPost.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFBvc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/FetchData.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/MustBeLoggedInToView.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/MustBeLoggedInToView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXVzdEJlTG9nZ2VkSW5Ub1ZpZXcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/ShowCredentialsFromContext.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/ShowCredentialsFromContext.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvd0NyZWRlbnRpYWxzRnJvbUNvbnRleHQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Shared/SurveyPrompt.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/_Imports.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/CreatePost.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/CreatePost.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-uzy05ijp57
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/CreateUser.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/CreateUser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-8ioxdxedwk
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/Index.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-xzgi4u3qtl
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/Login.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ggyo7swwbw
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/LoginButtons.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/LoginButtons.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5CdXR0b25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-lhd5b4yoyf
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/MyPosts.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/MyPosts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlQb3N0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-vfu6vvyj55
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/ViewPosts.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/ViewPosts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3RzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-agzgme1hb0
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Pages/ViewUsers.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Pages/ViewUsers.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VzZXJzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-os2xeex0iu
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Shared/MainLayout.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2ar46ifnr2
 
-[C:/Users/Oumar/RiderProjects/Assignment1-2 DNP1/BlazorWasm/Shared/NavMenu.razor]
+[C:/Users/Oumar/RiderProjects/Assignment_3_DNP1/BlazorWasm/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-oede2f5y32
