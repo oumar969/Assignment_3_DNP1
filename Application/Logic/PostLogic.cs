@@ -25,7 +25,7 @@ public class PostLogic : IPostLogic
         }
 
         ValidateTodo(dto);
-        Post post = new Post(/*user.Id*/user, dto.Title, dto.Body);
+        Post post = new Post(/*user.Id*/user.Id, dto.Title, dto.Body);
         Post created = await _postDao.CreateAsync(post);
         return created;
     }
@@ -73,6 +73,10 @@ public class PostLogic : IPostLogic
         Post updated = new (userToUse, titleToUse,bodyToUse)
         {
             Id = existing.Id,
+            // OwnerId = existing.OwnerId,
+            // Owner = existing.Owner,
+            // Title = existing.Title,
+            // Body = existing.Body
         };
 
         ValidateTodo(updated);
