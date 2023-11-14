@@ -25,7 +25,7 @@ public class PostLogic : IPostLogic
         }
 
         ValidateTodo(dto);
-        Post post = new Post(user, dto.Title, dto.Body);
+        Post post = new Post(user.Id, dto.Title, dto.Body);
         Post created = await _postDao.CreateAsync(post);
         return created;
     }
@@ -61,7 +61,7 @@ public class PostLogic : IPostLogic
             }
         }
 
-        User userToUse = user ?? existing.Owner;
+        int userToUse = existing?.OwnerId ?? 0; // antager, at OwnerId er af typen int
         string titleToUse = dto.Title ?? existing.Title;
         string bodyToUse = dto.Body ?? existing.Body;
 

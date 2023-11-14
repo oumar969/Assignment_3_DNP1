@@ -15,3 +15,20 @@ C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\FileData\obj\Debug\net7.0\FileDa
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\FileData\obj\Debug\net7.0\refint\FileData.dll
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\FileData\obj\Debug\net7.0\FileData.pdb
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\FileData\obj\Debug\net7.0\ref\FileData.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\bin\Debug\net7.0\FileData.deps.json
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\bin\Debug\net7.0\FileData.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\bin\Debug\net7.0\FileData.pdb
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\bin\Debug\net7.0\Application.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\bin\Debug\net7.0\Shared.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\bin\Debug\net7.0\Application.pdb
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\bin\Debug\net7.0\Shared.pdb
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.csproj.AssemblyReference.cache
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.AssemblyInfoInputs.cache
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.AssemblyInfo.cs
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.csproj.CoreCompileInputs.cache
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.csproj.CopyComplete
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\refint\FileData.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\FileData.pdb
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\FileData\obj\Debug\net7.0\ref\FileData.dll
