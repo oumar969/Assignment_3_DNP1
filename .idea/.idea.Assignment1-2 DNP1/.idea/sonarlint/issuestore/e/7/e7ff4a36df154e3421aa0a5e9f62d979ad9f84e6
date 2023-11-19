@@ -1,0 +1,14 @@
+
+`csharpsquid:S4136&"7All 'ValidateTodo' method overloads should be adjacent.(ç¬õøÿÿÿÿ8‰Æıê¼1
+]csharpsquid:S112"5'System.Exception' should not be thrown by user code.(ÔöŸ¶ÿÿÿÿÿ8‹Æıê¼1
+Wcsharpsquid:S112("5'System.Exception' should not be thrown by user code.(ßñ8‹Æıê¼1
+]csharpsquid:S112)"5'System.Exception' should not be thrown by user code.(ıñ¯øÿÿÿÿ8‹Æıê¼1
+Xcsharpsquid:S1123"5'System.Exception' should not be thrown by user code.(ÚÓ¶É8ŒÆıê¼1
+]csharpsquid:S112<"5'System.Exception' should not be thrown by user code.(ÔöŸ¶ÿÿÿÿÿ8ŒÆıê¼1
+]csharpsquid:S112F"5'System.Exception' should not be thrown by user code.(Î§ùµşÿÿÿÿ8ŒÆıê¼1
+Xcsharpsquid:S112\"5'System.Exception' should not be thrown by user code.(Â÷¼ƒ8Æıê¼1
+Xcsharpsquid:S112f"5'System.Exception' should not be thrown by user code.(ˆòêı8Æıê¼1
+Wcsharpsquid:S112n"5'System.Exception' should not be thrown by user code.(ßñ8Æıê¼1
+]csharpsquid:S112o"5'System.Exception' should not be thrown by user code.(ıñ¯øÿÿÿÿ8Æıê¼1
+Bcsharpsquid:S125i"Remove this commented out code.(ùùå8Æıê¼1
+Xcsharpsquid:S1135i"4Complete the task associated to this 'TODO' comment.(ùùå8Æıê¼1

@@ -58,4 +58,9 @@ public class UserEfcDao : IUserDao
         context.Users.Remove(existing);
         return context.SaveChangesAsync();
     }
+
+    public Task<IEnumerable<User>> GetAllAsync()
+    {
+        return Task.FromResult<IEnumerable<User>>(context.Users);
+    }
 }

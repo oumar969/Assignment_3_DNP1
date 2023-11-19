@@ -57,6 +57,11 @@ public class UserLogic : IUserLogic
         await userDao.DeleteAsync(id);
     }
 
+    public Task<IEnumerable<User>> GetAllAsync()
+    {
+        return userDao.GetAllAsync();
+    }
+
     private static void ValidateData(UserCreationDto userToCreate)
     {
         string userName = userToCreate.UserName;

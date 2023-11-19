@@ -56,18 +56,28 @@ public class PostEfcDao : IPostDao
         return result;
     }
 
-    public Task<Post?> GetByIdAsync(int postId)
+    public async Task<Post?> GetByIdAsync(int postId)
     {
-        throw new NotImplementedException();
+        Post? found = await context.Posts
+            .Include(post => post.Owner)
+            .SingleOrDefaultAsync(post => post.Id == postId);
+        
+        return found;
     }
 
-    public Task UpdateAsync(Post dto)
+    public async Task UpdateAsync(Post dto)
     {
-        throw new NotImplementedException();
-    }
+        context.Posts.Update(dto);
+        await context.SaveChangesAsync();    }
 
-    public Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
     {
-        throw new NotImplementedException();
-    }
+        Post? existing = await GetByIdAsync(id);
+        if (existing == null)
+        {
+            throw new Exception($"Post with id {id} not found");
+        }
+
+        context.Posts.Remove(existing);
+        await context.SaveChangesAsync();    }
 }

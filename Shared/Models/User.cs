@@ -12,8 +12,6 @@ public class User
     public string Password { get; set; }
 
     public string Role { get; set; }
-    [JsonIgnore]
-    public ICollection<Post> Posts { get; set; }
 
 
 }

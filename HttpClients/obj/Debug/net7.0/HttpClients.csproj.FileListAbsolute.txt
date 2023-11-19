@@ -13,3 +13,18 @@ C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\HttpClients\obj\Debug\net7.0\Htt
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\HttpClients\obj\Debug\net7.0\refint\HttpClients.dll
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\HttpClients\obj\Debug\net7.0\HttpClients.pdb
 C:\Users\Oumar\RiderProjects\Assignment1-2 DNP1\HttpClients\obj\Debug\net7.0\ref\HttpClients.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\bin\Debug\net7.0\HttpClients.deps.json
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\bin\Debug\net7.0\HttpClients.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\bin\Debug\net7.0\HttpClients.pdb
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\bin\Debug\net7.0\Shared.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\bin\Debug\net7.0\Shared.pdb
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.csproj.AssemblyReference.cache
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.AssemblyInfoInputs.cache
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.AssemblyInfo.cs
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.csproj.CoreCompileInputs.cache
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.csproj.CopyComplete
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\refint\HttpClients.dll
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\HttpClients.pdb
+C:\Users\Oumar\RiderProjects\Assignment_3_DNP1\HttpClients\obj\Debug\net7.0\ref\HttpClients.dll

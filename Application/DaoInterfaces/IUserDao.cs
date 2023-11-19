@@ -12,4 +12,6 @@ public interface IUserDao
     Task<User?> GetByIdAsync(int id);
     Task<User> UpdateAsync(User user);
     Task DeleteAsync(int id);
+    Task<IEnumerable<User>> GetAllAsync();
+
 }

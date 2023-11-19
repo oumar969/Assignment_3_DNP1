@@ -39,8 +39,8 @@ public class PostsController: ControllerBase
         try
         {
             SearchPostParametersDto parameters = new(userName, userId, titleContains/*, bodyContains*/);
-            var todos = await _postLogic.GetAsync(parameters);
-            return Ok(todos);
+            var posts = await _postLogic.GetAsync(parameters);
+            return Ok(posts);
         }
         catch (Exception e)
         {

@@ -93,4 +93,9 @@ User? existing = context.Users.FirstOrDefault(u =>
 
         return Task.CompletedTask;
     }
+
+    public Task<IEnumerable<User>> GetAllAsync()
+    {
+        return Task.FromResult<IEnumerable<User>>(context.Users);
+    }
 }
