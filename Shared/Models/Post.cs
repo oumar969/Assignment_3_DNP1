@@ -1,5 +1,6 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using Shared.Models;
 
 namespace Shared.Models;
@@ -13,7 +14,7 @@ public class Post
 
     public string Title { get;  set; } // Title of the post
     public string Body { get; set; } // Content of the post
-
+    [JsonConstructor]
     public Post(int ownerId, string title, string body)
     {
         OwnerId = ownerId;
