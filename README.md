@@ -37,3 +37,37 @@ You should be able to support the minimum required features mentioned in Assignm
 Class Diagram:
 
 ![Class Diagram0](https://github.com/oumar969/Assignment1-2_DNP1/assets/114076085/f0f358ac-070e-4931-9837-063a7a8ff68f)
+
+Assignment3
+
+Code changes
+
+The new EfcDataAccess component will have classes similar to the JsonDataAccess. You will have:
+
+· A ForumContext class (or call it whatever), inheriting from DbContext, which defines the DbSets<> you can interact with.
+
+· DAO implementations. These will implement the relevant DAO-interfaces from Application component. They will through their constructor receive an instance of your ForumContext
+
+Remember:
+
+In your WebAPI/Program.cs file you will need to change the registered services, so that the JSON-DAOs are swapped out with EFC-DAOs. Given that the Application layer just uses the DAO interfaces, and doesn’t know about the implementations, it should be fairly easy to swap out the JSON for EFC.
+
+Note:
+
+To lessen the risk of mistakes, you might want to remove the dependency from WebAPI to JsonDataAccess.
+
+This can be done by openening WebAPI.csproj (either open explorer or go to File System in Rider to find the file).
+
+Formalities
+
+You may continue to work in your group on this assignment.
+
+This assignment must be handed in to be allowed to attend the exam.
+
+Deadline will be posted on itslearning.
+
+What to hand in
+
+A link to GitHub, where you have your code.
+
+An updated class diagram, in .svg file format.
